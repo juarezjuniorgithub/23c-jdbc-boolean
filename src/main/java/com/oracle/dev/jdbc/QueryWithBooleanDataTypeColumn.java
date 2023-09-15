@@ -34,8 +34,8 @@ public class QueryWithBooleanDataTypeColumn {
 			ods = new OracleDataSource();
 			ods.setURL("jdbc:oracle:thin@[hostname]:[port]/[DB service/name]");
 			
-            ods.setUser("[Username]");
-            ods.setPassword("[Password]");
+                        ods.setUser("[Username]");
+                        ods.setPassword("[Password]");
 						
 			conn = ods.getConnection();
 			PreparedStatement stmt = conn.prepareStatement("SELECT * FROM HQ_EMPLOYEE WHERE ACTIVE");						
